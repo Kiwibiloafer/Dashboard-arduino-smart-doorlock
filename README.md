@@ -1,3 +1,7 @@
+# Smart Door Lock Web Dashboard
+
+This project is a web server dashboard for the Smart Door Lock system. The dashboard is connected to a Firebase Realtime Database to read and write data. It is built using Java and HTML, providing an interface to monitor the door's status and control its locking mechanism.
+
 ## Repository Contents
 
 1. **index.html**
