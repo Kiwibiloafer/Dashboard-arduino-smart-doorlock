@@ -1,39 +1,36 @@
-# Smart Door Lock Web Dashboard
+# 🖥️ Smart Door Lock - Web Dashboard
 
-This project is a web server dashboard for the Smart Door Lock system. The dashboard is connected to a Firebase Realtime Database to read and write data. It is built using Java and HTML, providing an interface to monitor the door's status and control its locking mechanism.
+Ini adalah antarmuka berbasis web untuk sistem kunci pintu pintar. Dashboard ini menampilkan status pintu secara real-time dan memungkinkan kontrol jarak jauh melalui Firebase Realtime Database. Dibangun menggunakan HTML dan JavaScript.
 
-## Repository Contents
+## 📁 Repository Contents
 
-1. **index.html**
-   - The main HTML file for the web dashboard. It displays the current status of the door and includes buttons to lock and unlock the door.
+- `index.html` - Halaman utama dashboard yang menampilkan status dan tombol kontrol.
+- `config.js` - File konfigurasi Firebase untuk menghubungkan dashboard ke database.
 
-2. **config.js**
-   - A JavaScript file containing the Firebase configuration and login details.
+## ⚙️ Setup Instructions
 
-## Setup Instructions
+1. ☁️ Gunakan Firebase yang sama dengan proyek ESP32.
+2. ✏️ Edit `config.js` dan isi dengan informasi dari Firebase Console:
+   - 🔑 API key
+   - 🌐 Auth domain
+   - 🔗 Database URL
+   - 🆔 Project ID
+   - 📲 Messaging sender ID
+   - 📦 App ID
+3. 🌍 Buka `index.html` di browser. Dashboard akan menampilkan status pintu dan tombol kontrol Lock/Unlock.
 
-1. **Set Up Firebase Project**
-   - Configure the application in the Firebase project settings.
+## 🌟 Features
 
-2. **Update Configuration**
-   - Populate the `config.js` file with the configuration details provided by Firebase (e.g., API key, database URL, and authentication details).
+- 🪟 Menampilkan status pintu secara real-time.
+- 🔓 Kontrol kunci dari browser menggunakan tombol Lock dan Unlock.
+- ⚡ Integrasi langsung ke Firebase dengan JavaScript sederhana.
+- 🧩 Konfigurasi cepat hanya dengan edit `config.js`.
 
-3. **Run the Dashboard**
-   - Open the `index.html` file in a web browser. The dashboard will display the current door status and include buttons to control the door.
+## 📝 Catatan
 
-## Features
+- Gunakan koneksi internet yang aman saat mengakses dashboard.
+- Pastikan Firebase Database Rules sudah mengizinkan read/write yang diperlukan.
+- Jangan share file `config.js` di publik jika berisi kredensial sensitif.
 
-- **Real-time Data Display**
-  - The dashboard shows the latest door status by reading data from the Firebase Realtime Database.
-
-- **Remote Door Control**
-  - Includes buttons to lock and unlock the door, with changes reflected in the database.
-
-- **Easy Configuration**
-  - Simple setup by editing the `config.js` file with Firebase details.
-
-## Notes
-
-- Ensure your Firebase Realtime Database rules allow appropriate read and write access.
-- Use a secure network to host and access the web dashboard.
-- Test the configuration by ensuring data updates correctly in the database.
+**📅 Tanggal mulai proyek:** 25 November 2024  
+**🛠️ Teknologi yang digunakan:** HTML, JavaScript, Firebase
